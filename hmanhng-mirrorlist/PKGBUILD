@@ -1,0 +1,13 @@
+pkgname=hmanhng-mirrorlist
+pkgver=1.0
+pkgrel=3
+pkgdesc="Repo hmanhng"
+url="https://github.com/hmanhng/pkgs"
+arch=('any')
+license=('GPL3')
+source=($pkgname)
+sha512sums=('SKIP')
+
+package() {
+	install -Dm 644 ${pkgname} 	${pkgdir}/etc/pacman.d/${pkgname}
+}
