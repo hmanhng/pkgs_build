@@ -1,0 +1,4 @@
+############### Hmanhng Mirrorlist ###############
+
+## Worldwide
+Server = https://hmanhng.github.io/pkgs/$arch

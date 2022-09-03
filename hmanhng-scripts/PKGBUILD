@@ -1,0 +1,23 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=hmanhng-scripts
+pkgver=1.0
+pkgrel=1
+pkgdesc="Scripts for Archcraft"
+url="https://github.com/hmanhng/pkgs"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=('light' 'xorg-xbacklight')
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	(find scripts -type f -exec install -Dm 755 "{}" "$pkgdir/usr/share/archcraft/{}" \;)
+	(find bin -type f -exec install -Dm 755 "{}" "$pkgdir/usr/local/{}" \;)
+}
