@@ -1,0 +1,52 @@
+#!/bin/sh
+
+export EDITOR="lvim"
+export TERMINAL="gnome-terminal"
+export BROWSER="microsoft-edge-stable"
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
+# For QT Themes
+export QT_QPA_PLATFORMTHEME=qt5ct
+export MANPAGER='lvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH=$HOME/.fnm:$PATH
+### PATH
+if [ -d "$HOME/.bin" ] ;
+then
+  PATH="$HOME/.bin:$PATH"
+  chmod +x $HOME/.bin/*
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/.dotnet/tools" ] ;
+  then PATH="$HOME/.dotnet/tools:$PATH"
+fi
+eval "$(fnm env)"
+eval "$(zoxide init zsh)"
+# eval "`pip completion --zsh`"
+
+
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]; then
+#         . "$HOME/.miniconda/etc/profile.d/conda.sh"
+#     else
+#         export PATH="$HOME/.miniconda/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# # <<< conda initialize <<<
+

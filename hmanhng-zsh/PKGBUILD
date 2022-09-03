@@ -1,0 +1,24 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=hmanhng-zsh
+pkgver=1.0
+pkgrel=0
+pkgdesc="Config zsh"
+url="https://github.com/hmanhng/pkgs"
+arch=('any')
+license=('GPL3')
+depends=('zsh' 'starship' 'zoxide' 'exa')
+conflicts=('archcraft-omz')
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _configdir=${pkgdir}/etc/skel/.config
+	mkdir -p "$_configdir"
+	cp -rf ${srcdir}/zsh 			"$_configdir"
+	install -Dm 644 ${srcdir}/.zshenv	${pkgdir}/etc/skel/.zshenv
+	install -Dm 644 ${srcdir}/starship.toml	"$_configdir"/starship.toml
+}
