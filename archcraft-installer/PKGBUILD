@@ -1,0 +1,49 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=hmanhng-installer
+pkgver=1.0
+pkgrel=0
+pkgdesc="Command line installer for Archcraft for expert users."
+url="https://github.com/hmanhng/pkgs_build"
+arch=('any')
+license=('GPL3')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('alacritty' 'dialog')
+
+source=(
+		abif
+		abif.desktop
+		alacritty.yml
+		dutch.trans
+		english.trans
+		french.trans
+		hungarian.trans
+		italian.trans
+		portuguese_brasil.trans
+		portuguese.trans
+		russian.trans
+		spanish.trans)
+
+sha256sums=('SKIP')
+
+package() {
+	local _idir="${pkgdir}/abif-master"
+	
+	mkdir -p "$_idir"
+
+	install -Dm 755 abif 					"$_idir"/abif
+	install -Dm 644 alacritty.yml 			"$_idir"/alacritty.yml
+	install -Dm 644 dutch.trans 			"$_idir"/dutch.trans
+	install -Dm 644 english.trans 			"$_idir"/english.trans
+	install -Dm 644 french.trans 			"$_idir"/french.trans
+	install -Dm 644 hungarian.trans 		"$_idir"/hungarian.trans
+	install -Dm 644 italian.trans 			"$_idir"/italian.trans
+	install -Dm 644 portuguese_brasil.trans "$_idir"/portuguese_brasil.trans
+	install -Dm 644 portuguese.trans 		"$_idir"/portuguese.trans
+	install -Dm 644 russian.trans 			"$_idir"/russian.trans
+	install -Dm 644 spanish.trans 			"$_idir"/spanish.trans
+
+	# copy files
+	install -Dm 644 abif.desktop 			-t ${pkgdir}/usr/share/applications/
+}
