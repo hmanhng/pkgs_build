@@ -1,0 +1,29 @@
+pkgname=hmanhng-lvim
+pkgver=1.0
+pkgrel=0
+pkgdesc="Lunarvim"
+url="https://github.com/hmanhng/pkgs_build"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=('neovim')
+conflicts=()
+provides=("${pkgname}")
+options=(!strip)
+
+prepare() {
+  cp -af ../files/. ${srcdir}
+}
+
+package() {
+  local _configdir=${pkgdir}/etc/skel/.config
+  local _local_share_dir=${pkgdir}/etc/skel/.local/share
+  local _bindir=${pkgdir}/usr/local/bin
+
+  mkdir -p "$_configdir" && mkdir -p "$_local_share_dir" && mkdir -p "$_bindir"
+
+  cp -r ${srcdir}/lunarvim              "$_local_share_dir"
+  cp -r ${srcdir}/lvim                  "$_configdir"
+  install -Dm 644 ${srcdir}/lvim.bin    "$_bindir"/lvim
+  chmod +x "$_bindir"/lvim
+}
