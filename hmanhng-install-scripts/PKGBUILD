@@ -1,0 +1,21 @@
+pkgname=hmanhng-install-scripts
+pkgver=1.0
+pkgrel=0
+pkgdesc='Archcraft Install Scripts'
+url="https://github.com/hmanhng/pkgs_build"
+arch=('any')
+license=('GPL3')
+
+source=(
+		'chrooted_post_install.sh'
+		'post_install.sh'
+)
+
+sha512sums=('SKIP')
+
+package() {
+	local bin=${pkgdir}/usr/bin
+	
+	install -Dm755 chrooted_post_install.sh 	${bin}/chrooted_post_install.sh
+	install -Dm755 post_install.sh 				${bin}/post_install.sh
+}
