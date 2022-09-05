@@ -45,7 +45,6 @@ package() {
 	install -Dm 644 .face				"$_skeldir"/.face
 	install -Dm 644 .gtkrc-2.0			"$_skeldir"/.gtkrc-2.0
 	install -Dm 644 .hushlogin			"$_skeldir"/.hushlogin
-  install -Dm 644 .xprofile       "$_skeldir"/.xprofile
 
 	# Make scripts executable
 	chmod +x "$_configdir"/ranger/scope.sh
