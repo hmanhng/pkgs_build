@@ -24,9 +24,6 @@ package() {
 
 	mkdir -p "$_skeldir" && mkdir -p "$_cachedir" && mkdir -p "$_configdir"
 
-	# Copy wallpapers for bspwm
-	cp -r ${srcdir}/Pictures 			"$_skeldir"
-
 	# Copy cache files
 	cp -r ${srcdir}/betterlockscreen 	"$_cachedir"
 	install -Dm 644 rofi3.druncache		"$_cachedir"/rofi3.druncache

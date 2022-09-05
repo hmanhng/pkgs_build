@@ -30,7 +30,7 @@ build_pkgs () {
 	echo -e "\nBuilding Packages - \n"
 	for pkg in "${PKGS[@]}"; do
 		echo -e "Building ${pkg}..."
-		cd ${pkg} &&  makepkg -s && mv *.pkg.tar.zst "$PKGDIR"
+		cd ${pkg} &&  makepkg -s --skipchecksums && mv *.pkg.tar.zst "$PKGDIR"
 
 		rm -rf src pkg
 
