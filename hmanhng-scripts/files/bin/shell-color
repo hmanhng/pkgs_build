@@ -1,0 +1,6 @@
+#!/bin/bash
+
+array=(animals bonsai colorbar colorblocks colortest colorwheel crunch crunchbang dna emwave faces fade ghosts hedgehogs illumina invaders mouseface panes pipes pipes3d railcars rally-x square tanks testfonts tiefighter unix zwaves)
+size=${#array[@]}
+index=$(($RANDOM % $size))
+bash <(echo ${array[$index]})
