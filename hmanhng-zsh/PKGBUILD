@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-zsh
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Config zsh"
 url="https://github.com/hmanhng/pkgs"
 arch=('any')
@@ -19,5 +19,6 @@ package() {
 	local _configdir=${pkgdir}/etc/skel/.config
 	mkdir -p "$_configdir"
 	cp -rf ${srcdir}/zsh 			"$_configdir"
+	install -Dm 644 ${srcdir}/.zshenv	${pkgdir}/etc/skel/.zshenv
 	install -Dm 644 ${srcdir}/starship.toml	"$_configdir"/starship.toml
 }
