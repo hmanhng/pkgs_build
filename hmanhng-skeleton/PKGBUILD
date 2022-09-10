@@ -37,7 +37,7 @@ package() {
 	cp -r ${srcdir}/ranger 				"$_configdir"
 	cp -r ${srcdir}/rofi 				"$_configdir"
 	install -Dm 644 mimeapps.list		"$_configdir"/mimeapps.list
-  install -Dm 644 clight.conf   "$_configdir"/redshift.conf
+	install -Dm 644 clight.conf   		"$_configdir"/clight.conf
 	install -Dm 644 .dmrc				"$_skeldir"/.dmrc
 	install -Dm 644 .face				"$_skeldir"/.face
 	install -Dm 644 .gtkrc-2.0			"$_skeldir"/.gtkrc-2.0
