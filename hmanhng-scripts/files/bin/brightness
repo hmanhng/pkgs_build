@@ -37,13 +37,13 @@ notify_bl() {
 
 # Increase brightness
 inc_backlight() {
-	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Raise d\(du\) 0.1 0 0
+	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Raise d\(du\) 0.05 0 0
 	notify_bl
 }
 
 # Decrease brightness
 dec_backlight() {
-	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Lower d\(du\) 0.1 0 0
+	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Lower d\(du\) 0.05 0 0
 	notify_bl
 }
 
