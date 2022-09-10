@@ -1,14 +1,14 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
 pkgname=hmanhng-scripts
-pkgver=1.0
-pkgrel=3
+pkgver=2.0
+pkgrel=0
 pkgdesc="Scripts for Archcraft"
 url="https://github.com/hmanhng/pkgs"
 arch=('any')
 license=('GPL3')
 makedepends=()
-depends=('light' 'xorg-xbacklight')
+depends=()
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
