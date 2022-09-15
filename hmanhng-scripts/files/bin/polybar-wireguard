@@ -4,7 +4,7 @@ configs_path=$HOME/.config/polybar-wireguard
 connected_interface=$(sudo wg |  sudo wg | grep -P "interface:" | awk '{print $2}')
 
 connect() {
-    selected_config=$(readlink -f $configs_path/*conf | xargs basename -a -s .conf | rofi -dmenu -theme $HOME/.config/openbox/rofi/landscape/launcher.rasi)
+    selected_config=$(readlink -f $configs_path/*conf | xargs basename -a -s .conf | rofi -dmenu -p "Wireguard" -theme $HOME/.config/openbox/rofi/landscape/vpn.rasi)
     [[ $selected_config ]] && sudo wg-quick up $configs_path/$selected_config.conf
 }
 

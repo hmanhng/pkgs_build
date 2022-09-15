@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-scripts
 pkgver=2.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Scripts for Archcraft"
 url="https://github.com/hmanhng/pkgs"
 arch=('any')
