@@ -1,0 +1,8 @@
+#!/bin/sh
+
+_user=`echo ${SUDO_USER:-$(whoami)}`
+export LUNARVIM_RUNTIME_DIR="${LUNARVIM_RUNTIME_DIR:-"/home/${_user}/.local/share/lunarvim"}"
+export LUNARVIM_CONFIG_DIR="${LUNARVIM_CONFIG_DIR:-"/home/${_user}/.config/lvim"}"
+export LUNARVIM_CACHE_DIR="${LUNARVIM_CACHE_DIR:-"/home/${_user}/.cache/lvim"}"
+
+exec nvim -u "$LUNARVIM_RUNTIME_DIR/lvim/init.lua" "$@"
