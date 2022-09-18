@@ -37,8 +37,7 @@ _manage_systemd_services() {
 							'cups.service'
 							'avahi-daemon.service'
 							'systemd-timesyncd.service'
-							'sddm-plymouth.service'
-              'betterlockscreen@$new_user.service')
+							'sddm-plymouth.service')
 	local _snapd_services=('apparmor.service'
 						   'snapd.apparmor.service'
 						   'snapd.socket')
@@ -55,6 +54,9 @@ _manage_systemd_services() {
 		echo "[*] Enabling $srv for target system..."
 		systemctl enable -f ${srv}
 	done
+		echo "+---------------------->>"
+		echo "[*] Enabling betterlockscreen@$new_user.service for target system..."
+		systemctl enable -f betterlockscreen@$new_user.service
 
 	# Manage snapd services on target system
 	#if [[ -x `which snap` ]]; then

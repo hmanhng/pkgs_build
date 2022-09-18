@@ -10,7 +10,7 @@ iDIR='/usr/share/archcraft/icons/dunst'
 
 # Get Volume
 get_volume() {
-	volume=`amixer get Master | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]'`
+	volume=`pactl list sinks | tr ' ' '\n' | grep -m1 '%'`
 	echo "$volume"
 }
 
