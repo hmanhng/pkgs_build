@@ -206,7 +206,7 @@ _remove_unwanted_ucode() {
 
 # Remove unnecessary packages
 _remove_unwanted_packages() {
-    local _packages_to_remove=('archcraft-install-scripts'
+    local _packages_to_remove=('hmanhng-install-scripts'
 							   'hmanhng-installer'
 							   'archcraft-welcome'
 							   'calamares-config'
