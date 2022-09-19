@@ -1,6 +1,6 @@
 pkgname=hmanhng-install-scripts
 pkgver=1.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Archcraft Install Scripts'
 url="https://github.com/hmanhng/pkgs_build"
 arch=('any')

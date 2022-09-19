@@ -37,8 +37,7 @@ _manage_systemd_services() {
 							'cups.service'
 							'avahi-daemon.service'
 							'systemd-timesyncd.service'
-							'sddm-plymouth.service'
-							betterlockscreen@"$new_user".service)
+							'sddm-plymouth.service')
 	local _snapd_services=('apparmor.service'
 						   'snapd.apparmor.service'
 						   'snapd.socket')
