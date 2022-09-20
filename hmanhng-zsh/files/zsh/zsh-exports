@@ -28,7 +28,7 @@ fi
 if [ -d "$HOME/.dotnet/tools" ] ;
   then PATH="$HOME/.dotnet/tools:$PATH"
 fi
-eval "$(fnm env)"
+# eval "$(fnm env)"
 eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 
