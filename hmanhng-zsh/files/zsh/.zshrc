@@ -77,6 +77,6 @@ export FZF_ALT_C_OPTS="--preview 'exa -aT -L 3 --color=always --group-directorie
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Lunarvim
-[ -d /home/${SUDO_USER:-$(whoami)}/.local/share/lunarvim/lvim ] || bash <(curl -s https://raw.githubusercontent.com/hmanhng/lvim/master/install.sh) --no-install-dependencies
+[ -d /home/${SUDO_USER:-$(whoami)}/.local/share/lunarvim/lvim ] || LV_BRANCH=master bash <(curl -s https://raw.githubusercontent.com/hmanhng/lvim/master/install.sh) --no-install-dependencies
 
 eval "$(starship init zsh)"
