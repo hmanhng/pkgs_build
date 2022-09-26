@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-skeleton
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Base Configurations"
 url="https://github.com/hmanhng/archcraft-skeleton"
 arch=('any')
@@ -36,6 +36,7 @@ package() {
 	cp -r ${srcdir}/qt5ct 				"$_configdir"
 	cp -r ${srcdir}/ranger 				"$_configdir"
 	cp -r ${srcdir}/rofi 				"$_configdir"
+	cp -r ${srcdir}/qutebrowser 		"$_configdir"
 	install -Dm 644 mimeapps.list		"$_configdir"/mimeapps.list
 	install -Dm 644 clight.conf   		"$_configdir"/clight.conf
 	install -Dm 644 .dmrc				"$_skeldir"/.dmrc
