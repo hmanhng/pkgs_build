@@ -51,7 +51,7 @@ bindkey -s '^n' 'lvim $(fzf)^M'
 bindkey -s '^z' 'zi^M'
 # bindkey '^?' vi-delete-char
 bindkey '^k' up-line-or-search # Up
-bindkey '^j' down-line-or-select # Down
+# bindkey '^j' down-line-or-select # Down
 bindkey -r '^u'
 bindkey -r '^d'
 # Edit line in vim with ctrl-e:

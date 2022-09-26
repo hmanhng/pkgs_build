@@ -5,8 +5,6 @@ alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias zshrc='lvim ~/.config/zsh/'
 
-# alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
-
 # get fastest mirrors
 alias mirror="sudo reflector -c HK,SG -l 5 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
@@ -26,6 +24,9 @@ alias fgrep='grep -F --color=auto'
 # alias cp="cp -i"
 # alias mv='mv -i'
 # alias rm='rm -i'
+
+# rsync progress
+alias rsync='rsync --progress'
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes
@@ -51,13 +52,10 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh""
 
-alias m="git checkout master"
-alias s="git checkout stable"
-
-
 # vim and emacs
 alias vi="lvim"
 alias vim="lvim"
+alias e="emacsclient -c -a 'emacs'"
 
 # root privileges
 alias suvi="sudo lvim"
@@ -92,9 +90,11 @@ alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
-alias stat='git status'  # 'status' is protected name so using 'stat' instead
+#alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+alias m="git checkout master"
+alias s="git checkout stable"
 
 # wget
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"

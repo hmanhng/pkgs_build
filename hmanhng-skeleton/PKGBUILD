@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-skeleton
 pkgver=2.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Base Configurations"
 url="https://github.com/hmanhng/archcraft-skeleton"
 arch=('any')
