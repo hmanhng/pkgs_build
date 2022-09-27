@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-skeleton
 pkgver=2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Base Configurations"
 url="https://github.com/hmanhng/archcraft-skeleton"
 arch=('any')
@@ -31,6 +31,7 @@ package() {
 	# Copy config files
 	cp -r ${srcdir}/geany 				"$_configdir"
 	cp -r ${srcdir}/gtk-3.0 			"$_configdir"
+	cp -r ${srcdir}/gtk-2.0 			"$_configdir"
 	cp -r ${srcdir}/Kvantum 			"$_configdir"
 	cp -r ${srcdir}/neofetch 			"$_configdir"
 	cp -r ${srcdir}/qt5ct 				"$_configdir"
@@ -41,7 +42,6 @@ package() {
 	install -Dm 644 clight.conf   		"$_configdir"/clight.conf
 	install -Dm 644 .dmrc				"$_skeldir"/.dmrc
 	install -Dm 644 .face				"$_skeldir"/.face
-	install -Dm 644 .gtkrc-2.0			"$_skeldir"/.gtkrc-2.0
 	install -Dm 644 .hushlogin			"$_skeldir"/.hushlogin
 
 	# Make scripts executable
