@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-zsh
 pkgver=1.0
-pkgrel=8
+pkgrel=9
 pkgdesc="Config zsh"
 url="https://github.com/hmanhng/pkgs"
 arch=('any')

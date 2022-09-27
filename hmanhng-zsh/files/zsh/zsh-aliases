@@ -78,9 +78,10 @@ alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update stan
 alias yaysua='yay -Sua'              # update only AUR pkgs (yay)
 alias yaysyu='yay -Syu'              # update standard pkgs and AUR pkgs (yay)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
 
 # git
+alias clone_dot='git clone https://github.com/hmanhng/dotfiles $HOME/Git/dotfiles && cd $HOME/Git/dotfiles'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
