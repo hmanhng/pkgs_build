@@ -1,6 +1,6 @@
 pkgname=hmanhng-wallpapers
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Hmanhng wallpapers for Archcraft"
 arch=('any')
 license=('GPL3')
