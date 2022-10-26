@@ -1,10 +1,8 @@
-# Maintainer: Aditya Shakya <adi1090x@gmail.com>
-
 pkgname=hmanhng-skeleton-kde
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Base Configurations kde"
-url="https://github.com/hmanhng/archcraft-skeleton"
+url="https://github.com/hmanhng/archcraft-skeleton-kde"
 arch=('any')
 license=('GPL3')
 makedepends=()
@@ -27,6 +25,7 @@ package() {
 	cp -r ${srcdir}/neofetch 			"$_configdir"
 	cp -r ${srcdir}/ranger 				"$_configdir"
 	cp -r ${srcdir}/qutebrowser 		"$_configdir"
+	cp -r ${srcdir}/nvim				"$_configdir"
 
 	# Make scripts executable
 	chmod +x "$_configdir"/ranger/scope.sh
