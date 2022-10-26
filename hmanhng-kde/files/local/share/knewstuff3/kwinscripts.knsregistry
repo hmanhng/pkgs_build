@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="210">
+  <name>Force Blur</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>esjeon</author>
+  <homepage>https://store.kde.org/p/1294604</homepage>
+  <licence></licence>
+  <version>0.5</version>
+  <rating>90</rating>
+  <downloads>126077</downloads>
+  <installedfile>/home/hmanhng/.local/share/kwin/scripts/forceblur</installedfile>
+  <id>1294604</id>
+  <releasedate>2022-02-17</releasedate>
+  <summary>Force-enable blur effect for user-specified windows</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/52/02/16/1294604/25d2a853b8055b383e5ede66db535b5c9a68.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/52/02/16/1294604/25d2a853b8055b383e5ede66db535b5c9a68.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDUxMDIyODkiLCJvIjoiMSIsInMiOiI5NDM3MDM3MWIyNTBiNTY5ZjQ5MWE5MGZkZGM4NTc4Y2NhZGE2MDE3NWNmODk0NmNmMWRkNGRmZTU5MzE5ZDU0MWY3ODc0OTZkYmYyYWY3YTQ2Y2VkY2UzZTA3OGYzMjAzYWY3OGE0NGU1YzhhMWI0ODI3ODYwMTlhMzAwOTk0MiIsInQiOjE2NjY3NjA5MzksInN0ZnAiOm51bGwsInN0aXAiOiIxMjMuMjcuMTczLjc2In0.icuS3KpXjNhYjkBtXDx9dcFMKRLzBPCPcWmM_g-0f4I/forceblur-0.6.1.kwinscript</payload>
+  <tags>blur,kwin,mit-license,linux,original-product,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="210">
+  <name>Latte Window Colors</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>Psifidotos</author>
+  <homepage>https://store.kde.org/p/1290287</homepage>
+  <licence></licence>
+  <version>0.2</version>
+  <rating>72</rating>
+  <downloads>136094</downloads>
+  <installedfile>/home/hmanhng/.local/share/kwin/scripts/lattewindowcolors</installedfile>
+  <id>1290287</id>
+  <releasedate>2019-03-23</releasedate>
+  <summary>This is a KWin script that sends window colors information to Latte through dbus interface.&lt;br />
+&lt;br />
+&lt;strong>Requires&lt;/strong>&lt;br />
+    Plasma &amp;gt;= 5.15&lt;br />
+    Latte Git version (upcoming v0.9)&lt;br />
+&lt;br />
+&lt;strong>Install&lt;/strong>&lt;br />
+This is a KWin script and as such it can be...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/02/97/22/1290287/1229ac1743d789fd6ba04a734dd3e751074c.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/02/97/22/1290287/1229ac1743d789fd6ba04a734dd3e751074c.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1NTMzMzIwMzQiLCJvIjoiMSIsInMiOiJlOTAxZWE3NDg2ZDg3MDJkNWNhYThlZTFiNjM1ZmI5NDY3NWIxOGRkYjYwYzE3M2Y0YjE1OTYxNWE0ODhlNjI2NDI4YmU1MWQxOWQxMjUxZTJjYzZjNjc4NWIyM2IxMThkNDEyNDQ3NTY4YzYwYzA5ZDdiN2JkMjE3MGRiZjdmYiIsInQiOjE2NjY3NjA5NzgsInN0ZnAiOm51bGwsInN0aXAiOiIxMjMuMjcuMTczLjc2In0.cD9yYDx7LHQ0HSHhOPe_N8j4GqtS7y9J7sL9dBrFs54/window-colors-0.2.kwinscript</payload>
+  <tags>linux,gplv2-later,colors,kwin,latte,original-product,unix,script</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

@@ -1,0 +1,5 @@
+[Applications][org.gnome.baobab]
+Seen=true
+
+[Notifications]
+PopupTimeout=3000

@@ -1,0 +1,24 @@
+[KFileDialog Settings]
+Recent Files[$e]=glorious.kwinrule,file:$HOME/Downloads/the-glorious-plasma-setup/local/share/color-schemes/GloriousDark.colors,file:$HOME/Downloads/the-glorious-plasma-setup/local/share/color-schemes/Glorious.colors,file:$HOME/Downloads/the-glorious-plasma-setup/glorious.kwinrule
+Recent URLs[$e]=file:$HOME/Downloads/the-glorious-plasma-setup/,file:$HOME/Downloads/the-glorious-plasma-setup/local/share/color-schemes/,file:$HOME/Downloads/the-glorious-plasma-setup/local/share/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+eDP-1 Height 1536x864 eDP-1=577
+eDP-1 Width 1536x864 eDP-1=426
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+eDP-1 Height 1536x864 eDP-1=700
+eDP-1 Width 1536x864 eDP-1=1020
+eDP-1 XPosition 1536x864 eDP-1=258
+eDP-1 XPosition 1920x1080 eDP-1=450
+eDP-1 YPosition 1536x864 eDP-1=111
+eDP-1 YPosition 1920x1080 eDP-1=182
+
+[Open-with settings]
+CompletionMode=1
+History=kon,qute,kitty,emacs --daemon,emacs --daemons

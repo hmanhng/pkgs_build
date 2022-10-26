@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="104">
+  <name>WhiteSur dark plasma</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1400409</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>79</rating>
+  <downloads>10184</downloads>
+  <installedfile>/home/hmanhng/.local/share/plasma/desktoptheme/WhiteSur-dark</installedfile>
+  <id>1400409</id>
+  <releasedate>2022-10-04</releasedate>
+  <summary>MacOS big sur theme for kde plasma&lt;br />
+-----------------------&lt;br />
+&lt;strong>Kvantum theme:&lt;/strong> &lt;a href="https://www.pling.com/p/1398841/" target="_blank" rel="nofollow">https://www.pling.com/p/1398841/&lt;/a>&lt;br />
+-----------------------&lt;br />
+&lt;strong>Icon theme:&lt;/strong> &lt;a...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/1400409/3e7b3166dbee0a004ed4a44a7e17218fbb19.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/1400409/3e7b3166dbee0a004ed4a44a7e17218fbb19.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NjQ5MDQ4NDkiLCJvIjoiMSIsInMiOiIxMjg5YTIyZjY2YmRhM2QzZmY1YTM0NGI1YzY3MzJkMmRmMGQ4NzFlYjEzY2QzMGE3YTBhMWJjNDU4ZDY0MGE5ZGY5MGY5MTk4YmUxZWQ5NGVjYThjYzE2MzJjNDE5ZjhjNzBjMjk2MDUzMGU1OTIzY2Y5MzBmOGEwZjExN2IwNCIsInQiOjE2NjY3NjIyMzAsInN0ZnAiOm51bGwsInN0aXAiOiIxMjMuMjcuMTczLjc2In0.6rdmQq1a-vE3rqJFqLEPQWYnvoPKMff0beeqx3JCHVA/WhiteSur-dark.tar.xz</payload>
+  <tags>unix,theme,linux,kde,gplv3,plasma,original-product</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

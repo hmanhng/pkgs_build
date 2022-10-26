@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-installer
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Command line installer for Archcraft for expert users."
 url="https://github.com/hmanhng/pkgs_build"
 arch=('any')

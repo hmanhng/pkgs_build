@@ -1,0 +1,27 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=hmanhng-kde
+pkgver=1.0
+pkgrel=0
+pkgdesc="KDE config"
+url="https://github.com/hmanhng/pkgs_build"
+arch=('any')
+license=('GPL3')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('plasma-meta')
+sha256sums=('SKIP')
+options=(!strip !emptydirs)
+# install="${pkgname}.install"
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _localdir=${pkgdir}/etc/skel/.local
+	local _configdir=${pkgdir}/etc/skel/.config
+  mkdir -p "$_localdir"&& mkdir -p "$_configdir"
+	cp -r ${srcdir}/local/* 			"$_localdir"
+	cp -r ${srcdir}/config/* 			"$_configdir"
+}

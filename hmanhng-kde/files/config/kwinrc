@@ -1,0 +1,39 @@
+[$Version]
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup
+
+[Desktops]
+Id_1=fb54e999-805b-4881-a575-d868ebcc059a
+Id_2=53b6e506-c95b-431a-b7ae-6cf282cd622b
+Id_3=cdfd4bb8-55d6-4393-a58c-fd68824d706d
+Id_4=bf38dbbd-9d51-4613-8d35-5e35a9b7d822
+Name_2=New Desktop
+Name_3=New Desktop
+Name_4=New Desktop
+Number=4
+Rows=4
+
+[Effect-blur]
+BlurStrength=8
+NoiseStrength=0
+
+[ModifierOnlyShortcuts]
+Meta=org.kde.krunner,/App,,display
+
+[NightColor]
+Active=true
+LatitudeAuto=21.5941
+LongitudeAuto=105.8432
+NightTemperature=5000
+
+[Plugins]
+blurEnabled=true
+forceblurEnabled=true
+kwin4_effect_dimscreenEnabled=true
+lattewindowcolorsEnabled=true
+slidebackEnabled=true
+
+[org.kde.kdecoration2]
+ButtonsOnLeft=XAI
+ButtonsOnRight=
+library=org.kde.breeze
+theme=Breeze

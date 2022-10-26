@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="462">
+  <name>Moe Konsole Theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>jomada</author>
+  <homepage>https://store.kde.org/p/1284572</homepage>
+  <licence></licence>
+  <version>1.5</version>
+  <rating>74</rating>
+  <downloads>3254</downloads>
+  <installedfile>/home/hmanhng/.local/share/konsole/Moe.colorscheme</installedfile>
+  <id>1284572</id>
+  <releasedate>2022-08-06</releasedate>
+  <summary>Moe Konsole theme for Moe Plasma theme https://store.kde.org/p/1284575/</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/43/73/13/1284572/6db0090d76cb1e7b4d65e33a6c4b81b1babaf574ccfc38ea0e4ee829c4c80ce6b9b6.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/43/73/13/1284572/6db0090d76cb1e7b4d65e33a6c4b81b1babaf574ccfc38ea0e4ee829c4c80ce6b9b6.jpg</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTk3ODg4NzciLCJvIjoiMSIsInMiOiI1ZjY0NmJkNjBhMTIwYTJlYzRlYzVjMDc0NTE0ZWFhMWMzMjlhNzljNTVhODhlNTBjNGJmZDliNDcwODA1ZGYwMWExM2M1NDUzZGJmYTNlNmY4Zjk1YTllMDBkZTdlY2NiMmY4M2Y4ZDMyZTVhMmE0NTU2YjU0ZDRiMTEyYTkyOCIsInQiOjE2NjY3OTg2MjksInN0ZnAiOm51bGwsInN0aXAiOiIxMjMuMjcuMTczLjc2In0.uHLWZjqOl_TnJIfQW84KE079lrXzZVlskn5_vaD4AXk/Moe.colorscheme</payload>
+  <tags>original-product,addon,gplv3</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

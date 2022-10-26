@@ -89,7 +89,7 @@ LUKS_OPT=""											# Default or user-defined?
 MOUNTPOINT="/mnt"       							# Installation
 AIROOTIMG=""                						# Root image to install
 BYPASS="$MOUNTPOINT/bypass/" 						# Root image mountpoint
-BTRFS=0                     						# BTRFS used? "1" = btrfs alone, "2" = btrfs + subvolume(s)
+BTRFS=2                     						# BTRFS used? "1" = btrfs alone, "2" = btrfs + subvolume(s)
 MOUNT_OPTS="/tmp/.mnt_opts" 						# Filesystem Mount options
 FS_OPTS=""											# FS mount options available
 CHK_NUM=16											# Used for FS mount options checklist length
