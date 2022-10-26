@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-skeleton-kde
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Base Configurations kde"
 url="https://github.com/hmanhng/archcraft-skeleton"
 arch=('any')
@@ -30,4 +30,6 @@ package() {
 
 	# Make scripts executable
 	chmod +x "$_configdir"/ranger/scope.sh
+
+	(find bin -type f -exec install -Dm 755 "{}" "$pkgdir/usr/local/{}" \;)
 }

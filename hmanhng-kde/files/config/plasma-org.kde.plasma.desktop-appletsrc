@@ -221,7 +221,7 @@ ToolBoxButtonX=485
 ToolBoxButtonY=36
 
 [Containments][60][Wallpaper][org.kde.image][General]
-Image=/home/hmanhng/.local/share/wallpapers/wall_2.jpg
+Image=/etc/skel/.local/share/wallpapers/wall_2.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][70]
