@@ -5,14 +5,14 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=10145dbd1dd000166678866700000009600004
+clientId1=10145dbd1dd000166679033300000207250004
 clientId2=10145dbd1dd000166675804600000041420013
 count=2
-discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10145dbd1dd000166675804600000041420013_1666790327_42004
+discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10145dbd1dd000166675804600000041420013_1666797922_919957
 program1=/usr/lib/DiscoverNotifier
 program2=/usr/bin/yakuake
-restartCommand1=/usr/lib/DiscoverNotifier,-session,10145dbd1dd000166678866700000009600004_1666790327_42177
-restartCommand2=/usr/bin/yakuake,-session,10145dbd1dd000166675804600000041420013_1666790327_42004
+restartCommand1=/usr/lib/DiscoverNotifier,-session,10145dbd1dd000166679033300000207250004_1666797922_919924
+restartCommand2=/usr/bin/yakuake,-session,10145dbd1dd000166675804600000041420013_1666797922_919957
 restartStyleHint1=0
 restartStyleHint2=0
 userId1=hmanhng

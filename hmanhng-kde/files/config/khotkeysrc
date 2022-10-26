@@ -1020,6 +1020,7 @@ Theme[$d]
 
 [KDE]
 ColorScheme[$d]
+SingleClick[$d]
 contrast[$d]
 widgetStyle[$d]
 
