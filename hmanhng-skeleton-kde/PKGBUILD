@@ -2,7 +2,7 @@
 
 pkgname=hmanhng-skeleton-kde
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Base Configurations kde"
 url="https://github.com/hmanhng/archcraft-skeleton"
 arch=('any')
@@ -26,7 +26,6 @@ package() {
 	# Copy config files
 	cp -r ${srcdir}/neofetch 			"$_configdir"
 	cp -r ${srcdir}/ranger 				"$_configdir"
-	cp -r ${srcdir}/rofi 				"$_configdir"
 	cp -r ${srcdir}/qutebrowser 		"$_configdir"
 
 	# Make scripts executable
