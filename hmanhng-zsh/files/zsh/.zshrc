@@ -1,9 +1,16 @@
 #!/bin/sh
 
+#: Dotfiles {{{
+export DOTFILES=$HOME/Git/dotfiles
+alias clone_dot='git clone https://github.com/hmanhng/dotfiles $DOTFILES && cd $DOTFILES'
+alias clone_pass='git clone https://github.com/hmanhng/pass $PASSWORD_STORE_DIR'
+#}}}
+
 autoload -Uz colors && colors
 HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE=~/.cache/.zsh_history
+export HISTORY_IGNORE="(ls|ll|lt|la|l|l.|cd|j|z|pwd|exit|sudo reboot|history|cd -|cd ..|..|neofetch|htop)"
 setopt appendhistory
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch
@@ -74,8 +81,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_R_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_OPTS="--preview 'exa -aT -L 3 --color=always --group-directories-first {}'"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# Lunarvim
-[ -d /home/${SUDO_USER:-$(whoami)}/.local/share/lunarvim/lvim ] || LV_BRANCH=master bash <(curl -s https://raw.githubusercontent.com/hmanhng/lvim/master/install.sh) --no-install-dependencies
 
 eval "$(starship init zsh)"

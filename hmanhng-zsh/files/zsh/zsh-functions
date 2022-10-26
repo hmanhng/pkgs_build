@@ -35,3 +35,16 @@ function mach_java_mode() {
     export SDKMAN_DIR="$HOME/.sdkman"
     [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 }
+
+function backup() {
+  for i in $@
+  do
+    mv "$i" "$i.bak"
+  done
+}
+function unbackup() {
+  for i in $@
+  do
+    mv "$i" "$(echo $i | sed -r 's/\.bak//')"
+  done
+}

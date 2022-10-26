@@ -3,6 +3,7 @@ alias j='z'
 alias f='zi'
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+alias neofetch='neofetch --ascii_distro Archcraft'
 
 # get fastest mirrors
 alias mirror="sudo reflector -c HK,SG -l 5 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
@@ -53,7 +54,6 @@ alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/
 
 # vim and emacs
 alias vi="nvim"
-alias vim="nvim"
 alias e="emacsclient -c -a 'emacs'"
 
 # root privileges
@@ -80,7 +80,6 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
 
 # git
-alias clone_dot='git clone https://github.com/hmanhng/dotfiles $HOME/Git/dotfiles && cd $HOME/Git/dotfiles'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
