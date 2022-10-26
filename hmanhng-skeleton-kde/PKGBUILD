@@ -1,0 +1,34 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=hmanhng-skeleton-kde
+pkgver=1.0
+pkgrel=0
+pkgdesc="Base Configurations kde"
+url="https://github.com/hmanhng/archcraft-skeleton"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip)
+
+prepare() {
+	cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _skeldir=${pkgdir}/etc/skel
+	local _configdir=${_skeldir}/.config
+
+	mkdir -p "$_skeldir" && mkdir -p "$_configdir"
+
+	# Copy config files
+	cp -r ${srcdir}/neofetch 			"$_configdir"
+	cp -r ${srcdir}/ranger 				"$_configdir"
+	cp -r ${srcdir}/rofi 				"$_configdir"
+	cp -r ${srcdir}/qutebrowser 		"$_configdir"
+
+	# Make scripts executable
+	chmod +x "$_configdir"/ranger/scope.sh
+}
