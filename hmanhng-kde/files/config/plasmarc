@@ -2,4 +2,4 @@
 name=WhiteSur-dark
 
 [Wallpapers]
-usersWallpapers=/usr/share/backgrounds/hmanhng-wallpapers/wall_2.jpg
+usersWallpapers=/etc/skel/.local/share/wallpapers/wall_2.jpg
