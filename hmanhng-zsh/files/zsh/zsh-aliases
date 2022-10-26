@@ -3,7 +3,6 @@ alias j='z'
 alias f='zi'
 alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias zshrc='lvim ~/.config/zsh/'
 
 # get fastest mirrors
 alias mirror="sudo reflector -c HK,SG -l 5 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
@@ -53,12 +52,12 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh""
 
 # vim and emacs
-alias vi="lvim"
-alias vim="lvim"
+alias vi="nvim"
+alias vim="nvim"
 alias e="emacsclient -c -a 'emacs'"
 
 # root privileges
-alias suvi="sudo lvim"
+alias suvi="sudo nvim"
 alias sucp="sudo cp"
 alias sumv="sudo mv"
 alias surm="sudo rm"

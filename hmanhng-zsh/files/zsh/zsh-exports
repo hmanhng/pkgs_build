@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export EDITOR="emacsclient -c -a 'emacs'"
+export EDITOR="nvim"
 export LSP_USE_PLISTS=true
 export BROWSER="qutebrowser"
 
