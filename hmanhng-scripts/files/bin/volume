@@ -48,9 +48,9 @@ dec_volume() {
 toggle_mute() {
 	amixer get Master | grep '\[on\]' &>/dev/null
 	if [[ "$?" == 0 ]]; then
-		amixer set Master toggle && dunstify -u low --replace=69 -i '/usr/share/archcraft/icons/dunst/volume-mute.png' "Mute"
+		pactl set-sink-mute @DEFAULT_SINK@ true && dunstify -u low --replace=69 -i '/usr/share/archcraft/icons/dunst/volume-mute.png' "Mute"
 	else
-		amixer set Master toggle && get_icon && dunstify -u low --replace=69 -i "$icon" "Unmute"
+		pactl set-sink-mute @DEFAULT_SINK@ false && get_icon && dunstify -u low --replace=69 -i "$icon" "Unmute"
 	fi
 }
 
@@ -58,9 +58,9 @@ toggle_mute() {
 toggle_mic() {
 	amixer get Capture | grep '\[on\]' &>/dev/null
 	if [[ "$?" == 0 ]]; then
-		amixer -D pulse sset Capture toggle && dunstify -u low --replace=69 -i "$iDIR/microphone-mute.png" "Microphone Switched OFF"
+		pactl set-source-mute 1 toggle && dunstify -u low --replace=69 -i "$iDIR/microphone-mute.png" "Microphone Switched OFF"
 	else
-		amixer -D pulse sset Capture toggle && dunstify -u low --replace=69 -i "$iDIR/microphone.png" "Microphone Switched ON"
+		pactl set-source-mute 1 toggle && dunstify -u low --replace=69 -i "$iDIR/microphone.png" "Microphone Switched ON"
 	fi
 }
 

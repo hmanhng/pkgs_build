@@ -30,9 +30,9 @@ toggle() {
 print() {
     if [[ $connected_interface ]]
     then
-        echo ' 歷' "$connected_interface"
+        echo '歷' "$connected_interface"
     else
-        echo ' 轢'
+        echo '轢'
     fi
 }
 

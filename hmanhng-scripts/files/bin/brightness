@@ -5,12 +5,8 @@ iDIR='/usr/share/archcraft/icons/dunst'
 
 # Get brightness
 get_backlight() {
-	LIGHT=$(busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Get | awk '{printf "%.2f\n", $4}' | cut -b 3-4)
-	if [[ "$LIGHT" != "00" ]]; then
-		echo "${LIGHT}%"
-	else
-		echo "100%"
-	fi
+	LIGHT=$(printf "%.0f\n" `light -G`)
+	echo "${LIGHT}%"
 }
 
 # Get icons
@@ -37,14 +33,12 @@ notify_bl() {
 
 # Increase brightness
 inc_backlight() {
-	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Raise d\(du\) 0.05 0 0
-	notify_bl
+	light -A 5 && notify_bl
 }
 
 # Decrease brightness
 dec_backlight() {
-	busctl call org.clightd.clightd /org/clightd/clightd/Backlight2 org.clightd.clightd.Backlight2 Lower d\(du\) 0.05 0 0
-	notify_bl
+	light -U 5 && notify_bl
 }
 
 # Execute accordingly
